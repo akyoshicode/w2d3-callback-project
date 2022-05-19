@@ -35,7 +35,5 @@ return newArray;
 
 
 
-
-
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 module.exports = reject;

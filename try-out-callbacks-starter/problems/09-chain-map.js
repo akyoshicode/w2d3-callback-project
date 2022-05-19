@@ -29,13 +29,15 @@ console.log(chainMap(4, square, half));         // 8
 console.log(chainMap(4, half, square));         // 4
 *******************************************************************************/
 
-let chainMap = function() {
+// let chainMap = function(value, ...cb) {
+//     cb.forEach(function(cb){
+//         value = cb(value);
+//     })
+//     return value;
+// };
 
-};
 
-
-
-
+const chainMap = (value, ...cbs) => cbs.reduce( (a, cb) => cb(a), value )
 
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
